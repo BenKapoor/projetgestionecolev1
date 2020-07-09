@@ -25,5 +25,12 @@ INSERT INTO `user` (`username`, `password`, `enabled`) VALUES ('alex', '$2a$10$.
 
 INSERT INTO `users_roles` (`user_id`, `role_id`) VALUES (2, 2);
 
+INSERT INTO `user` (`username`, `password`, `enabled`) VALUES ('admin', '$2y$12$SeGDpcAxV2YpMVXI13ZHluosYXSMnhV7y7nkzobrKPKJaROHXSEvy', 1);
+INSERT INTO `user` (`username`, `password`, `enabled`) VALUES ('prof', '$2y$12$cWArL9U25RnGGKB3KCkVpuXUAFfkJfeNKFPAgwLmHQJuLk5zzGJoq', 1);
+
+INSERT INTO `users_roles` (`user_id`, `role_id`) VALUES (4, 2);
+INSERT INTO `users_roles` (`user_id`, `role_id`) VALUES (3, 1);
+(admin admin => directeur)
+(prof prof => enseignant)
 
 http://localhost:8080/gestion
